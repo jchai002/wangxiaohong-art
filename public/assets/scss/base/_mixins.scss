@@ -1,0 +1,4 @@
+@mixin bg-img($img, $size: cover, $posX: center, $posY: center, $repeat: no-repeat) {
+  background: url("/assets/images/#{$img}") $posX $posY $repeat;
+  background-size: $size;
+}

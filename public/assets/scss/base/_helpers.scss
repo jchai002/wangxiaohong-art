@@ -1,0 +1,225 @@
+/*mixin declarations*/
+
+//padding class generators
+@mixin generate-padding($lower-bound, $upper-bound, $step) {
+  $i: $lower-bound;
+  @while $i <= $upper-bound {
+    .pad-#{$i} {padding: #{$i}px !important;}
+    $i: $i + $step
+  }
+}
+
+@mixin generate-padding-x($lower-bound, $upper-bound, $step) {
+  $i: $lower-bound;
+  @while $i <= $upper-bound {
+    .pad-x-#{$i} {padding-left: #{$i}px !important;padding-right: #{$i}px !important;}
+    $i: $i + $step
+  }
+}
+
+@mixin generate-padding-y($lower-bound, $upper-bound, $step) {
+  $i: $lower-bound;
+  @while $i <= $upper-bound {
+    .pad-y-#{$i} {padding-top: #{$i}px !important;padding-bottom: #{$i}px !important;}
+    $i: $i + $step
+  }
+}
+
+@mixin generate-padding-top($lower-bound, $upper-bound, $step) {
+  $i: $lower-bound;
+  @while $i <= $upper-bound {
+    .pad-t-#{$i} {padding-top: #{$i}px !important;}
+    $i: $i + $step
+  }
+}
+
+@mixin generate-padding-bottom($lower-bound, $upper-bound, $step) {
+  $i: $lower-bound;
+  @while $i <= $upper-bound {
+    .pad-b-#{$i} {padding-bottom: #{$i}px !important;}
+    $i: $i + $step
+  }
+}
+
+@mixin generate-padding-left($lower-bound, $upper-bound, $step) {
+  $i: $lower-bound;
+  @while $i <= $upper-bound {
+    .pad-l-#{$i} {padding-left: #{$i}px !important;}
+    $i: $i + $step
+  }
+}
+
+@mixin generate-padding-right($lower-bound, $upper-bound, $step) {
+  $i: $lower-bound;
+  @while $i <= $upper-bound {
+    .pad-r-#{$i} {padding-right: #{$i}px !important;}
+    $i: $i + $step
+  }
+}
+
+//margin class generators
+@mixin generate-margin($lower-bound, $upper-bound, $step) {
+  $i: $lower-bound;
+  @while $i <= $upper-bound {
+    .mar-#{$i} {margin: #{$i}px !important;}
+    $i: $i + $step
+  }
+}
+
+@mixin generate-margin-x($lower-bound, $upper-bound, $step) {
+  $i: $lower-bound;
+  @while $i <= $upper-bound {
+    .mar-x-#{$i} {margin-left: #{$i}px !important;margin-right: #{$i}px !important;}
+    $i: $i + $step
+  }
+}
+
+@mixin generate-margin-y($lower-bound, $upper-bound, $step) {
+  $i: $lower-bound;
+  @while $i <= $upper-bound {
+    .mar-y-#{$i} {margin-top: #{$i}px !important;margin-bottom: #{$i}px !important;}
+    $i: $i + $step
+  }
+}
+
+@mixin generate-margin-top($lower-bound, $upper-bound, $step) {
+  $i: $lower-bound;
+  @while $i <= $upper-bound {
+    .mar-t-#{$i} {margin-top: #{$i}px !important;}
+    $i: $i + $step
+  }
+}
+
+@mixin generate-margin-bottom($lower-bound, $upper-bound, $step) {
+  $i: $lower-bound;
+  @while $i <= $upper-bound {
+    .mar-b-#{$i} {margin-bottom: #{$i}px !important;}
+    $i: $i + $step
+  }
+}
+
+@mixin generate-margin-left($lower-bound, $upper-bound, $step) {
+  $i: $lower-bound;
+  @while $i <= $upper-bound {
+    .mar-l-#{$i} {margin-left: #{$i}px !important;}
+    $i: $i + $step
+  }
+}
+
+@mixin generate-margin-right($lower-bound, $upper-bound, $step) {
+  $i: $lower-bound;
+  @while $i <= $upper-bound {
+    .mar-r-#{$i} {margin-right: #{$i}px !important;}
+    $i: $i + $step
+  }
+}
+
+/*invoke mixins*/
+
+//padding: arguments are ($lower-bound, $upper-bound, $step)
+@include generate-padding(0,64,4);
+@include generate-padding-x(0,64,4);
+@include generate-padding-y(0,64,4);
+@include generate-padding-top(0,64,4);
+@include generate-padding-bottom(0,64,4);
+@include generate-padding-left(0,64,4);
+@include generate-padding-right(0,64,4);
+
+//margin: arguments are ($lower-bound, $upper-bound, $step)
+@include generate-margin(0,64,4);
+@include generate-margin-x(0,64,4);
+@include generate-margin-y(0,64,4);
+@include generate-margin-top(0,64,4);
+@include generate-margin-bottom(0,64,4);
+@include generate-margin-left(0,64,4);
+@include generate-margin-right(0,64,4);
+
+/*general convinience classes*/
+
+.inline {
+  display: inline-block !important;
+}
+
+.block {
+  display: block !important;
+}
+
+.relative {
+  position: relative !important;
+}
+
+.absolute {
+  position: absolute !important;
+}
+
+.contain {
+  overflow: hidden !important;
+}
+
+.clear {
+  clear: both !important;
+}
+
+.no-text-mod {
+  text-transform: none !important;
+}
+
+.uppercase {
+  text-transform: uppercase !important;
+}
+
+.capitalize {
+  text-transform: capitalize !important;
+}
+
+.underline {
+  text-decoration: underline !important;
+}
+
+.no-border {
+  border: none !important;
+}
+
+.flat-link {
+  text-decoration: none !important;
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.pull-right {
+  display: block;
+  float: right;
+}
+.no-box-shadow {
+  box-shadow: none !important;
+}
+
+.absolute-right {
+  position: absolute;
+  right: 0px;
+}
+
+.absolute-left {
+  position: absolute;
+  left: 0px;
+}
+
+.absolute-top {
+  position: absolute;
+  top: 0px;
+}
+
+.absolute-bottom {
+  position: absolute;
+  bottom: 0px;
+}
+
+.circle {
+  border-radius: 50%;
+}

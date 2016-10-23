@@ -1,0 +1,9 @@
+*.DS_Store
+.DS_Store
+
+/vendor/
+.env
+
+craft/storage/
+/public/assets/.sass-cache
+/public/node_modules/

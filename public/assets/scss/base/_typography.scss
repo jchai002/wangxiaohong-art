@@ -1,0 +1,200 @@
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 400;
+  src: url('/assets/fonts/roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 300;
+  src: url('/assets/fonts/roboto/Roboto-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 200;
+  src: url('/assets/fonts/roboto/Roboto-Thin.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-weight: 600;
+  src: url('/assets/fonts/roboto/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: 'IslandAdventuresScript';
+    src: url('/assets/fonts/islandadventures-script/KaushanScript-Regular.otf'),
+        url('/assets/fonts/islandadventures-script/islandadventures-script.woff2') format('woff2'),
+        url('/assets/fonts/islandadventures-script/islandadventures-script.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+@mixin main-font{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+@mixin main-font-Light{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+@mixin main-font-Lightest{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+@mixin main-font-Bold{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+@mixin cursive-font {
+    font-family: 'IslandAdventuresScript', sans-serif;
+    font-weight: 400;
+}
+
+
+/*********************
+H1
+*********************/
+
+$desktop-h1-size: 84px;
+$desktop-h1-line-height: 86px;
+$laptop-h1-size: 42px;
+$laptop-h1-line-height: 44px;
+$tablet-h1-size: 32px;
+$tablet-h1-line-height: 34px;
+$mobile-h1-size: 26px;
+$mobile-h1-line-height: 28px;
+
+h1 {
+    @include main-font-Light;
+    margin: 0;
+    font-size: $mobile-h1-size;
+    line-height: $mobile-h1-line-height;
+    @include media-breakpoint-up(md) {
+        font-size: $tablet-h1-size;
+        line-height: $tablet-h1-line-height;
+    }
+    @include media-breakpoint-up(lg) {
+        font-size: $laptop-h1-size;
+        line-height: $laptop-h1-line-height;
+    }
+    @include media-breakpoint-up(xl) {
+        font-size: $desktop-h1-size;
+        line-height: $desktop-h1-line-height;
+    }
+    .special-title & {
+        @include cursive-font;
+        font-size: 33px;
+        line-height: 45px;
+        text-align: center;
+    }
+}
+
+/*********************
+H2
+*********************/
+
+$desktop-h2-size: 57px;
+$desktop-h2-line-height: 60px;
+$laptop-h2-size: 30px;
+$laptop-h2-line-height: 32px;
+$mobile-h2-size: 24px;
+$mobile-h2-line-height: 26px;
+
+
+h2 {
+    @include main-font-Light;
+    margin: 0;
+    font-size: $mobile-h2-size;
+    line-height: $mobile-h2-line-height;
+    @include media-breakpoint-up(lg) {
+        font-size: $laptop-h2-size;
+        line-height: $laptop-h2-line-height;
+    }
+    @include media-breakpoint-up(xl) {
+        font-size: $desktop-h2-size;
+        line-height: $desktop-h2-line-height;
+    }
+}
+
+/*********************
+H3
+*********************/
+
+$desktop-h3-size: 57px;
+$desktop-h3-line-height: 60px;
+$laptop-h3-size: 30px;
+$laptop-h3-line-height: 32px;
+$mobile-h3-size: 25px;
+$mobile-h3-line-height: 27;
+
+h3 {
+    @include main-font-Light;
+    color: $white;
+    font-size: $mobile-h3-size;
+    line-height: $mobile-h3-line-height;
+    @include media-breakpoint-up(lg) {
+        font-size: $laptop-h3-size;
+        line-height: $laptop-h3-line-height;
+    }
+    @include media-breakpoint-up(xl) {
+        font-size: $desktop-h3-size;
+        line-height: $desktop-h3-line-height;
+    }
+}
+
+/*********************
+H4
+*********************/
+
+$desktop-h4-size: 37px;
+$desktop-h4-line-height: 39px;
+$laptop-h4-size: 28px;
+$laptop-h4-line-height: 30px;
+$mobile-h4-size: 16px;
+$mobile-h4-line-height: 18px;
+
+h4 {
+    @include main-font-Bold;
+    color: $white;
+    font-size: $mobile-h4-size;
+    line-height: $mobile-h4-line-height;
+    @include media-breakpoint-up(lg) {
+        font-size: $laptop-h4-size;
+        line-height: $laptop-h4-line-height;
+    }
+    @include media-breakpoint-up(xl) {
+        font-size: $desktop-h4-size;
+        line-height: $desktop-h4-line-height;
+    }
+}
+
+/*********************
+p
+*********************/
+
+$desktop-p-size: 20px;
+$desktop-p-line-height: 23px;
+$laptop-p-size: 18px;
+$laptop-p-line-height: 20px;
+$mobile-p-size: 15px;
+$mobile-p-line-height: 18px;
+
+body, p {
+    @include main-font;
+    color: $text-base;
+    font-size: $mobile-p-size;
+    line-height: $mobile-p-line-height;
+    @include media-breakpoint-up(lg) {
+        font-size: $laptop-p-size;
+        line-height: $laptop-p-line-height;
+    }
+    @include media-breakpoint-up(xl) {
+        font-size: $desktop-p-size;
+        line-height: $desktop-p-line-height;
+    }
+}

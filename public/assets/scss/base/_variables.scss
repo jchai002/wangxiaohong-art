@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+// colours
+// Island Adventues Blue $master-blue
+// Anacortes Red $master-red
+// La Conner Orange $master-orange
+// Port Angeles Yellow $master-yellow
+// Seattle Green $master-green:
+// Everett Gray $master-gray
+
+$bg-color: #f2f2f2;
+
+$white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
+
+$master-blue: #0a2e4a;
+$master-red: #941100;
+$master-orange: #e26419;
+$master-yellow: #f2c44b;
+$master-green: #284524;
+$master-gray: #5e5e5e;
+
+
+// Accent + Variants
+$medium-blue: #395974;
+$light-blue: #2d475f;
+$lighter-blue: #45678a;
+
+$dark-grey: #424242;
+$light-gray: #919191;
+$lighter-grey: #ebebeb;
+$lightest-grey: #edf2f4;
+
+//
+$text-base: $master-blue;
+
+// spacing
+$space-inset-xs: 0 4px;
+$space-inset-s: 0 8px;
+$space-inset-m: 0 16px;
+$space-inset-l: 0 32px;
+$space-inset-xl: 0 64px;
+$space-stack-xs: 4px 0;
+$space-stack-s: 8px 0;
+$space-stack-m: 16px 0;
+$space-stack-l: 32px 0;
+$space-stack-xl: 64px 0;
+$space-xs: 4px;
+$space-s: 8px;
+$space-m: 16px;
+$space-l: 32px;
+$space-xl: 64px;
