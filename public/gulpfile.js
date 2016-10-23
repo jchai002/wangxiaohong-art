@@ -30,7 +30,7 @@ gulp.src([jsSource+'jQuery/*',jsSource+'core/tether.min.js',jsSource+'core/boots
 
 gulp.task('watch', function(){
   gulp.watch(scssSource+ '**/*.scss', ['build-css']);
-  gulp.watch(jsSource +'**/*',['build-js']);
+  // gulp.watch(jsSource +'**/*',['build-js']);
 });
 
-gulp.task('default', ['build-css', 'build-js', 'watch']);
+gulp.task('default', ['build-css', 'watch']);

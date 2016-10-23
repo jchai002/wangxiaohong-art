@@ -36,9 +36,6 @@
     <!-- custom fonts -->
     <link rel="stylesheet" type="text/css" href="{{ craft.config.environmentVariables.assetsBaseUrl }}/css/font-awesome.css">
 
-    <!-- compiled js -->
-    <script src="{{ craft.config.environmentVariables.assetsBaseUrl }}/js/dest/main.js"></script>
-
     <!-- Font Awesome and Pixeden Icon Stroke icon fonts-->
     <link rel="stylesheet" href="{{ craft.config.environmentVariables.assetsBaseUrl }}/fonts/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ craft.config.environmentVariables.assetsBaseUrl }}/fonts/css/pe-icon-7-stroke.css">
@@ -51,5 +48,11 @@
 	{% block content %}
 	{% endblock %}
   {% include '_footer' %}
+  <!-- Javascript files-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+ <script src="{{ craft.config.environmentVariables.assetsBaseUrl }}/js/bootstrap.min.js"></script>
+ <script src="{{ craft.config.environmentVariables.assetsBaseUrl }}/js/jquery.cookie.js"> </script>
+ <script src="{{ craft.config.environmentVariables.assetsBaseUrl }}/js/lightbox.min.js"></script>
+ <script src="{{ craft.config.environmentVariables.assetsBaseUrl }}/js/front.js"></script>
 </body>
 </html>
