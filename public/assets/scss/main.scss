@@ -1,11 +1,11 @@
 @charset "utf-8";
 
 @import
-"bootstrap/_bootstrap",
+"_bootstrap",
 'base/_presets.scss',
 'base/_variables.scss',
-'base/_typography.scss',
 'base/_mixins.scss',
 'base/_helpers.scss',
 'base/_lightbox.scss',
-'scoped/_global.scss'
+'_default.scss',
+'_custom.scss'
