@@ -1,25 +1,5 @@
-
-  <body>
-    <!-- navbar-->
-    <header class="header">
-      <div role="navigation" class="navbar navbar-default">
-        <div class="container">
-          <div class="navbar-header"><a href="index.html" class="navbar-brand">Multi.</a>
-            <div class="navbar-buttons">
-              <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle navbar-btn">Menu<i class="fa fa-align-justify"></i></button>
-            </div>
-          </div>
-          <div id="navigation" class="collapse navbar-collapse navbar-right">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="text.html">About Me</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
-
+{% extends "_layout" %}
+  {% block content %}
     <div class="jumbotron main-jumbotron">
       <div class="container">
         <div class="content">
@@ -42,97 +22,33 @@
       <div class="container">
         <div class="row no-space">
           <div class="col-sm-4 col-xs-6">
-            <div class="box"><a href="img/portfolio-1.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 1"><img src="img/portfolio-1.jpg" alt="" class="img-responsive"></a></div>
+            <div class="box"><a href="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-1.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 1"><img src="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-1.jpg" alt="" class="img-responsive"></a></div>
           </div>
           <div class="col-sm-4 col-xs-6">
-            <div class="box"><a href="img/portfolio-7.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 7"><img src="img/portfolio-7.jpg" alt="" class="img-responsive"></a></div>
+            <div class="box"><a href="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-7.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 7"><img src="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-7.jpg" alt="" class="img-responsive"></a></div>
           </div>
           <div class="col-sm-4 col-xs-6">
-            <div class="box"><a href="img/portfolio-3.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 3"><img src="img/portfolio-3.jpg" alt="" class="img-responsive"></a></div>
+            <div class="box"><a href="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-3.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 3"><img src="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-3.jpg" alt="" class="img-responsive"></a></div>
           </div>
           <div class="col-sm-4 col-xs-6">
-            <div class="box"><a href="img/portfolio-5.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 5"><img src="img/portfolio-5.jpg" alt="" class="img-responsive"></a></div>
+            <div class="box"><a href="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-5.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 5"><img src="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-5.jpg" alt="" class="img-responsive"></a></div>
           </div>
           <div class="col-sm-4 col-xs-6">
-            <div class="box"><a href="img/portfolio-4.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 4"><img src="img/portfolio-4.jpg" alt="" class="img-responsive"></a></div>
+            <div class="box"><a href="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-4.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 4"><img src="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-4.jpg" alt="" class="img-responsive"></a></div>
           </div>
           <div class="col-sm-4 col-xs-6">
-            <div class="box"><a href="img/portfolio-6.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 6"><img src="img/portfolio-6.jpg" alt="" class="img-responsive"></a></div>
+            <div class="box"><a href="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-6.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 6"><img src="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-6.jpg" alt="" class="img-responsive"></a></div>
           </div>
           <div class="col-sm-4 col-xs-6">
-            <div class="box"><a href="img/portfolio-2.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 2"><img src="img/portfolio-2.jpg" alt="" class="img-responsive"></a></div>
+            <div class="box"><a href="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-2.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 2"><img src="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-2.jpg" alt="" class="img-responsive"></a></div>
           </div>
           <div class="col-sm-4 col-xs-6">
-            <div class="box"><a href="img/portfolio-8.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 8"><img src="img/portfolio-8.jpg" alt="" class="img-responsive"></a></div>
+            <div class="box"><a href="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-8.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 8"><img src="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-8.jpg" alt="" class="img-responsive"></a></div>
           </div>
           <div class="col-sm-4 col-xs-6">
-            <div class="box"><a href="img/portfolio-9.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 9"><img src="img/portfolio-9.jpg" alt="" class="img-responsive"></a></div>
+            <div class="box"><a href="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-9.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 9"><img src="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-9.jpg" alt="" class="img-responsive"></a></div>
           </div>
         </div>
       </div>
     </section>
-    <footer class="footer">
-      <div class="footer__block">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-sm-12">
-              <h4 class="heading">About Multi</h4>
-              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus magna. Cras in mi at felis aliquet congue.  Vivamus magna. Cras in mi at felis aliquet congue.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. </p>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <h4 class="heading">Our offices</h4>
-              <h5>London</h5>
-              <p> Donec eleifend<br />libero at sagittis<br />mollis + 44 2556 789 8799</p>
-              <h5>Paris</h5>
-              <p> Donec eleifend<br />libero at sagittis<br />mollis + 41 2556 789 8799</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-4 col-sm-6">
-              <h4 class="heading">Popular Categories</h4>
-              <ul>
-                <li><a href="category.html">Graphic design</a></li>
-                <li><a href="category.html">Web design</a></li>
-                <li><a href="category.html">Support</a></li>
-                <li><a href="category.html">Accounting</a></li>
-              </ul>
-            </div>
-            <div class="col-md-4 col-sm-6">
-              <h4 class="heading">Let's be Friends</h4>
-              <p class="social social--big"><a href="#" data-animate-hover="pulse" class="external facebook"><i class="fa fa-facebook"></i></a><a href="#" data-animate-hover="pulse" class="external gplus"><i class="fa fa-google-plus"></i></a><a href="#" data-animate-hover="pulse" class="external twitter"><i class="fa fa-twitter"></i></a><a href="#" data-animate-hover="pulse" class="email"><i class="fa fa-envelope"></i></a></p>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <h4 class="heading">News and Updates</h4>
-              <p>Sign up to get weekly portion of fresh jobs and news from us.</p>
-              <form class="footer__newsletter">
-                <div class="input-group">
-                  <input type="text" placeholder="Enter your email address" class="form-control"><span class="input-group-btn">
-                    <button type="button" class="btn btn-default"><i class="fa fa-send"></i></button></span>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer__copyright">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <p>&copy;2016 Best company</p>
-            </div>
-            <div class="col-md-6">
-              <p class="credit">Template by <a href="https://bootstrapious.com/free-templates" class="external">Bootstrapious.com</a></p>
-              <!-- Please do not remove the backlink to us unless you support us at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- Javascript files-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.cookie.js"> </script>
-    <script src="js/lightbox.min.js"></script>
-    <script src="js/front.js"></script>
-  </body>
+{% endblock %}
