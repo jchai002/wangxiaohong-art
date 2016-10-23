@@ -19,8 +19,8 @@ return array(
     'devMode' => true,
     'environmentVariables' => array(
       'siteName' => 'Hong Dev',
-      'siteUrl' => 'http://localhost:8887',
-      'assetsBaseUrl' => 'http://localhost:8887/assets'
+      'siteUrl' => 'http://localhost:8887/hong/public',
+      'assetsBaseUrl' => 'http://localhost:8887/hong/public/assets'
     ),
   )
 );
