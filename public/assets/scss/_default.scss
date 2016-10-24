@@ -598,6 +598,9 @@ p.social {
   .content {
     position: relative;
   }
+  h1 {
+    @include cursive-font;
+  }
   p a:not(.btn) {
     color: #fff;
     &:hover {
@@ -1337,6 +1340,7 @@ STYLE SWITCHER FOR DEMO
 }
 
 .navbar-brand {
+  @include cursive-font;
   float: left;
   padding: 19.5px 15px;
   font-size: 18px;
@@ -1592,7 +1596,7 @@ STYLE SWITCHER FOR DEMO
 /* scaffolding */
 
 body {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  @include main-font;
   font-size: 14px;
   line-height: 1.55;
   color: #000000;
