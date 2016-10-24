@@ -9,6 +9,11 @@
 
 return array(
   '*' => array(
+    'environmentVariables' => array(
+      'siteName' => 'Wang Xiao Hong',
+      'siteUrl' => 'http://ec2-35-160-96-40.us-west-2.compute.amazonaws.com',
+      'assetsBaseUrl' => 'http://ec2-35-160-96-40.us-west-2.compute.amazonaws.com/assets'
+    ),
     'generateTransformsBeforePageLoad' => true,
     'defaultSearchTermOptions' => array(
       'subLeft' => true,
