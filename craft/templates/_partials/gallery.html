@@ -1,18 +1,23 @@
-<section id="gallery">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1 class="heading">Gallery</h1>
+{% for block in entry.galleries %}
+  {% if block.type == 'gallery' %}
+
+  <section id="gallery">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="heading">{{block.galleryTitle}}</h1>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container">
-    <div class="row no-space">
-      {% for picture in entry.gallery %}
-      <div class="col-md-4 col-sm-6">
-        <div class="box"><a href="{{ picture.getUrl() }}" title="{{picture.title}}" data-lightbox="portfolio" data-title="{{picture.title}}"><img src="{{ picture.getUrl('tile') }}" alt="" class="img-responsive"></a></div>
+    <div class="container">
+      <div class="row no-space">
+        {% for picture in block.gallery %}
+        <div class="col-md-4 col-sm-6">
+          <div class="box"><a href="{{ picture.getUrl() }}" title="{{picture.title}}" data-lightbox="portfolio" data-title="{{picture.title}}"><img src="{{ picture.getUrl('tile') }}" alt="" class="img-responsive"></a></div>
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
-  </div>
-</section>
+  </section>
+  {% endif %}
+{% endfor %}
