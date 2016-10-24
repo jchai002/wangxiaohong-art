@@ -9,7 +9,7 @@ set :port, '22 -A'
 set :domain, '35.160.96.40'
 set :deploy_to, "/var/www/production.#{project_name}"
 set :branch, 'master'
-set :database, 'tla_production'
+set :database, 'hong'
 set :shared_paths, ['craft/storage','.env','.env.example','vendor','composer.json','composer.lock']
 ​
 task :setup => :environment do
@@ -49,7 +49,7 @@ task :db_backup do
 end
 
 task :db_transfer do
-  system "/Applications/MAMP/Library/bin/mysqldump -u root -proot tla > dump.sql
+  system "/Applications/MAMP/Library/bin/mysqldump -u root -proot hong > dump.sql
           scp dump.sql deploy@#{domain}:#{deploy_to}/shared"
 end
 
@@ -70,7 +70,7 @@ end
 
 task :db_pull do
   system "scp deploy@#{domain}:#{deploy_to}/dump.sql dump.sql"
-  system "#{ENV['command'] || '/Applications/MAMP/Library/bin/mysql'} -u root -proot tla < dump.sql"
+  system "#{ENV['command'] || '/Applications/MAMP/Library/bin/mysql'} -u root -proot hong < dump.sql"
 end
 
 task :upload_images do
