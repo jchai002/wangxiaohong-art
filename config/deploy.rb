@@ -10,7 +10,7 @@ set :domain, '35.160.96.40'
 set :deploy_to, "/var/www/production.#{project_name}"
 set :branch, 'master'
 set :database, 'tla_production'
-set :shared_paths, ['craft/storage','.env','.env.example']
+set :shared_paths, ['craft/storage','.env','.env.example','vendor']
 ​
 task :setup => :environment do
   # create shared folders
