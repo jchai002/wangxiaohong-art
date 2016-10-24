@@ -1,7 +1,7 @@
 require 'mina/git'
 ​
 set :user, 'deploy'
-set :repository, 'jerrygit'
+set :repository, 'git@github.com:jchai002/wangxiaohong-art.git'
 set :project_name, "wangxiaohong.art"
 set :port, '22 -A'
 
@@ -10,20 +10,13 @@ set :domain, '35.160.96.40'
 set :deploy_to, "/var/www/production.#{project_name}"
 set :branch, 'master'
 set :database, 'tla_production'
-set :shared_paths, ['craft/storage']
+set :shared_paths, ['craft/storage','.env','.env.example']
 ​
 task :setup => :environment do
   # create shared folders
   queue! %[mkdir -p "#{deploy_to}/shared/craft/config"]
   queue! %[mkdir -p "#{deploy_to}/shared/craft/storage"]
   queue! %[mkdir -p "#{deploy_to}/shared/public/assets/images"]
-  queue! %[mkdir -p "#{deploy_to}/shared/public/assets/artifacts"]
-  queue! %[mkdir -p "#{deploy_to}/shared/public/assets/artifacts/image_files"]
-  queue! %[mkdir -p "#{deploy_to}/shared/public/assets/artifacts/video_files"]
-  queue! %[mkdir -p "#{deploy_to}/shared/public/assets/artifacts/audio_files"]
-  queue! %[mkdir -p "#{deploy_to}/shared/public/assets/artifacts/pdf_files"]
-  queue! %[mkdir -p "#{deploy_to}/shared/public/assets/artifacts/document_files"]
-  queue! %[mkdir -p "#{deploy_to}/shared/db_backup"]
 
   # change project directory user group to web
   queue! %[chgrp -R web "#{deploy_to}"]
