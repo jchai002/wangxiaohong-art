@@ -10,7 +10,7 @@
     <div class="row no-space">
       {% for picture in entry.gallery %}
       <div class="col-md-4 col-sm-6">
-        <div class="box"><a href="{{ picture.getUrl() }}" title="{{picture.title}}" data-lightbox="portfolio" data-title="{{picture.title}}"><img src="{{ picture.getUrl() }}" alt="" class="img-responsive"></a></div>
+        <div class="box"><a href="{{ picture.getUrl() }}" title="{{picture.title}}" data-lightbox="portfolio" data-title="{{picture.title}}"><img src="{{ picture.getUrl('tile') }}" alt="" class="img-responsive"></a></div>
       </div>
       {% endfor %}
     </div>
