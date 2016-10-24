@@ -7764,50 +7764,50 @@ SERVICES / INTEGRATIONS
     text-align: center;
     margin-top: 20px; }
 
-.blog-post .post-content {
+.article .article-text {
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.6; }
-  .blog-post .post-content p, .blog-post .post-content ul, .blog-post .post-content ol, .blog-post .post-content h1, .blog-post .post-content h2, .blog-post .post-content h3, .blog-post .post-content h4, .blog-post .post-content h5, .blog-post .post-content h6 {
+  .article .article-text p, .article .article-text ul, .article .article-text ol, .article .article-text h1, .article .article-text h2, .article .article-text h3, .article .article-text h4, .article .article-text h5, .article .article-text h6 {
     margin-bottom: 30px; }
-  .blog-post .post-content blockquote p {
+  .article .article-text blockquote p {
     margin-bottom: 0; }
 
-.blog-post .comment {
+.article .comment {
   margin-bottom: 25px; }
-  .blog-post .comment:before {
+  .article .comment:before {
     content: " ";
     display: table; }
-  .blog-post .comment:after {
+  .article .comment:after {
     content: " ";
     display: table;
     clear: both; }
-  .blog-post .comment .posted {
+  .article .comment .posted {
     color: #999999;
     font-size: 12px; }
-  .blog-post .comment .reply {
+  .article .comment .reply {
     font-family: "Roboto", Helvetica, Arial, sans-serif; }
-  .blog-post .comment.last {
+  .article .comment.last {
     margin-bottom: 0; }
 
-.blog-post .comments, .blog-post .comment-form {
+.article .comments, .article .comment-form {
   padding: 20px 0;
   margin-top: 20px;
   border-top: solid 1px #eeeeee; }
 
-.blog-post .comments:before, .blog-post .comment-form:before, .blog-post .comments:after, .blog-post .comment-form:after {
+.article .comments:before, .article .comment-form:before, .article .comments:after, .article .comment-form:after {
   content: " ";
   display: table; }
 
-.blog-post .comments:after, .blog-post .comment-form:after {
+.article .comments:after, .article .comment-form:after {
   clear: both; }
 
-.blog-post .comments h4 {
+.article .comments h4 {
   margin-bottom: 20px; }
 
-.blog-post .comment-form {
+.article .comment-form {
   margin-bottom: 20px; }
-  .blog-post .comment-form h4 {
+  .article .comment-form h4 {
     margin-bottom: 20px; }
 
 /*

@@ -2,16 +2,16 @@
 <header class="header">
 	<div role="navigation" class="navbar navbar-default">
 		<div class="container">
-			<div class="navbar-header"><a href="index.html" class="navbar-brand">{{siteName}}</a>
+			<div class="navbar-header"><a href="{{siteUrl}}" class="navbar-brand">{{siteName}}</a>
 				<div class="navbar-buttons">
 					<button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle navbar-btn">Menu<i class="fa fa-align-justify"></i></button>
 				</div>
 			</div>
 			<div id="navigation" class="collapse navbar-collapse navbar-right">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="/">Gallery</a></li>
-					<li><a href="/about">About</a></li>
-					<li><a href="/">Contact</a></li>
+					<li class="{%if entry.slug == 'gallery' %}active{%endif%}"><a href="{{siteUrl}}">Gallery</a></li>
+					<li class="{%if entry.slug == 'about' %}active{%endif%}"><a href="{{siteUrl}}/about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
 		</div>

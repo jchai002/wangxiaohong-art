@@ -1,4 +1,4 @@
-<section id="gallery" class="background-gray-lightest">
+<section id="gallery">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -8,33 +8,11 @@
   </div>
   <div class="container">
     <div class="row no-space">
-      <div class="col-sm-4 col-xs-6">
-        <div class="box"><a href="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-1.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 1"><img src="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-1.jpg" alt="" class="img-responsive"></a></div>
+      {% for picture in entry.gallery %}
+      <div class="col-md-4 col-sm-6">
+        <div class="box"><a href="{{ picture.getUrl() }}" title="{{picture.title}}" data-lightbox="portfolio" data-title="{{picture.title}}"><img src="{{ picture.getUrl() }}" alt="" class="img-responsive"></a></div>
       </div>
-      <div class="col-sm-4 col-xs-6">
-        <div class="box"><a href="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-7.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 7"><img src="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-7.jpg" alt="" class="img-responsive"></a></div>
-      </div>
-      <div class="col-sm-4 col-xs-6">
-        <div class="box"><a href="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-3.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 3"><img src="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-3.jpg" alt="" class="img-responsive"></a></div>
-      </div>
-      <div class="col-sm-4 col-xs-6">
-        <div class="box"><a href="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-5.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 5"><img src="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-5.jpg" alt="" class="img-responsive"></a></div>
-      </div>
-      <div class="col-sm-4 col-xs-6">
-        <div class="box"><a href="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-4.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 4"><img src="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-4.jpg" alt="" class="img-responsive"></a></div>
-      </div>
-      <div class="col-sm-4 col-xs-6">
-        <div class="box"><a href="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-6.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 6"><img src="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-6.jpg" alt="" class="img-responsive"></a></div>
-      </div>
-      <div class="col-sm-4 col-xs-6">
-        <div class="box"><a href="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-2.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 2"><img src="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-2.jpg" alt="" class="img-responsive"></a></div>
-      </div>
-      <div class="col-sm-4 col-xs-6">
-        <div class="box"><a href="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-8.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 8"><img src="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-8.jpg" alt="" class="img-responsive"></a></div>
-      </div>
-      <div class="col-sm-4 col-xs-6">
-        <div class="box"><a href="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-9.jpg" title="" data-lightbox="portfolio" data-title="Portfolio image 9"><img src="{{ craft.config.environmentVariables.assetsBaseUrl }}/images/portfolio-9.jpg" alt="" class="img-responsive"></a></div>
-      </div>
+      {% endfor %}
     </div>
   </div>
 </section>

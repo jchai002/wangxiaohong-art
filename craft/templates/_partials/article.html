@@ -1,0 +1,22 @@
+{% for block in entry.article %}
+{% switch block.type %}
+  {% case "text" %}
+  <section class="article">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="article-text">
+            {{block.text}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {% case "fullWidthImage" %}
+    {% set image = block.image.first() %}
+    <figure class="full-image"><img src="{{image.getUrl()}}" alt="{{image.title}}">
+      <figcaption>{{block.caption}} </figcaption>
+    </figure>
+{% endswitch %}
+
+{% endfor %}
