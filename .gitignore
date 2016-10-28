@@ -7,3 +7,5 @@
 craft/storage/
 /public/assets/.sass-cache
 /public/node_modules/
+/craft/config/general.php
+/craft/config/db.php
