@@ -10,7 +10,7 @@ set :domain, '35.160.96.40'
 set :deploy_to, "/var/www/production.#{project_name}"
 set :branch, 'master'
 set :database, 'hong'
-set :shared_paths, ['craft/storage','.env','.env.example','vendor','composer.json','composer.lock']
+set :shared_paths, ['craft/storage','.env','.env.example','vendor','composer.json','composer.lock','craft/config/general.php','craft/config/db.php']
 ​
 task :setup => :environment do
   # create shared folders

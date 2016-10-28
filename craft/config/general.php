@@ -11,17 +11,9 @@ return array(
   '*' => array(
     'environmentVariables' => array(
       'siteName' => 'Wang Xiao Hong',
-      'siteUrl' => 'http://wangxiaohong.gallery/',
-      'assetsBaseUrl' => 'http://wangxiaohong.gallery/assets'
+      'siteUrl' => 'http://ec2-35-160-96-40.us-west-2.compute.amazonaws.com',
+      'assetsBaseUrl' => 'http://ec2-35-160-96-40.us-west-2.compute.amazonaws.com/assets'
     ),
     'generateTransformsBeforePageLoad' => true
-  ),
-  'localhost' => array(
-    'devMode' => true,
-    'environmentVariables' => array(
-      'siteName' => 'Hong Dev',
-      'siteUrl' => 'http://localhost:8887/hong/public',
-      'assetsBaseUrl' => 'http://localhost:8887/hong/public/assets'
-    ),
   )
 );
