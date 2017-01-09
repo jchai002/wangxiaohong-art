@@ -9,9 +9,9 @@
  return array(
      '*' => array(
          'tablePrefix' => 'craft',
-         'server' => getenv('DB_HOST'),
-         'user' => getenv('DB_USER'),
-         'password' => getenv('DB_PASS'),
-         'database' => getenv('DB_NAME')
+         'server' => 'localhost',
+         'user' => 'root',
+         'password' => 'root',
+         'database' => 'hong'
      )
  );
